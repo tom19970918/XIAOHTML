@@ -1,0 +1,343 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*home*/
+
+*,*::before, *::after{
+	box-sizing: border-box;
+}
+
+.wrap {
+	width: 1110px;
+	margin: 0 auto;
+}
+
+.header{
+	width: 1110px;
+	height: 80px;
+	background: #fff;
+	border-bottom: 1px solid #999999;
+	margin-bottom: 80px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: fixed;
+	top: 0;
+}
+
+.container{
+	width: 1110px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.container ul{
+	display: flex;
+}
+
+.header img{
+	width: 40px;
+	height: 40px;
+}
+
+.container li a{
+	display: block;
+	margin-left: 40px;
+	color: #000;
+	text-decoration: none;
+	font-family: Roboto;
+	font-weight: regular;
+	font-size: 16px;
+}
+
+.container li a:hover{
+	color: #304ffe;
+}
+
+.menu{
+	width: 1110px;
+	padding-top: 120px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu_left{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+.menu_left{
+	width: 730px;
+}
+
+.menu_right{
+	width: 350px;
+}
+
+.name{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 730px;
+	height: 140px;
+	background: #0026ca;
+	padding: 20px 40px;
+	margin-bottom: 30px;
+}
+.name:hover{
+	background: #304ffe;
+}
+
+.name h1{
+	color: #fff;
+	font-family: noto sans tc;
+	font-weight: regular;
+	font-size: 50px;
+	padding-bottom: 20px;	
+}
+
+.name p{
+	color: #fff;
+	font-family: noto sans tc;
+	font-weight: regular;
+	font-size: 20px;
+}
+
+.name a{
+	display: block;
+	width: 148px;
+	height: 48px;
+	padding: 16px 0;
+	text-align: center;
+	color: #0026ca;
+	background: #fff;
+	text-decoration: none;
+	font-family: noto sans tc;
+	font-weight: regular;
+	font-size: 16px;
+	border-radius: 0 0 10px 0;
+}
+.name a:hover{
+	color: #fff;
+	background: #4f69fe;
+}
+
+.gotriwa a,.paperfly a,.kaka a,.dope a,.lee a,.bird a,.xiao_book a,.bus a,.cocoa a,.oil a{
+	display: block;
+	background-repeat: no-repeat;
+    background-size: cover;
+	margin-bottom: 30px;
+	background-position: 50%;
+}
+
+.gotriwa a{
+	width: 350px;
+	height: 275px;
+	background-image: url(../img/goTriwa.jpg);
+}
+.gotriwa a:hover{
+	background-image: url(../img/card.png);
+}
+
+.paperfly a{
+	width: 730px;
+	height: 410px;
+	background-image: url(../img/paperfly.gif);
+}
+.paperfly a:hover{
+	background-image: url(../img/card.png);
+}
+
+.kaka a{
+	width: 350px;
+	height: 197px;
+	background-image: url(../img/kaka.jpg);
+}
+.kaka a:hover{
+	background-image: url(../img/card.png);
+}
+
+.dope a{
+	width: 730px;
+	height: 411px;
+	background-image: url(../img/dope.gif);
+}
+.dope a:hover{
+	background-image: url(../img/card.png);
+}
+
+.lee a{
+	width: 350px;
+	height: 410px;
+	background-image: url(../img/lee.jpg);
+}
+.lee a:hover{
+	background-image: url(../img/card.png);
+}
+
+.bird a{
+	width: 350px;
+	height: 270px;
+	background-image: url(../img/bird.jpg);
+}
+.bird a:hover{
+	background-image: url(../img/card.png);
+}
+
+.bus a{
+	width: 350px;
+	height: 250px;
+	background-image: url(../img/bus.jpg);
+}
+.bus a:hover{
+	background-image: url(../img/card.png);
+}
+
+.xiao_book a{
+	width: 350px;
+	height: 250px;
+	background-image: url(../img/xiao_book.jpg);
+}
+.xiao_book a:hover{
+	background-image: url(../img/card.png);
+}
+
+.cocoa a{
+	width: 350px;
+	height: 250px;
+	background-image: url(../img/COCOA.gif);
+	
+}
+.cocoa a:hover{
+	background-image: url(../img/card.png);
+}
+
+
+.oil a{
+	width: 730px;
+	height: 410px;
+	background-image: url(../img/oil.jpg);
+}
+.oil a:hover{
+	background-image: url(../img/card.png);
+}
+
+
+
+/*about*/
+
+.introduction{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 120px;
+}
+
+.introduction h1,h2,h3{
+	width: 350px;
+	color: #0026ca;
+	text-decoration: none;
+	font-family: noto sans tc;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.introduction h1{
+	width: 1000px;
+	font-size: 40px;
+	margin: 0 0 60px 95px;
+}
+
+.introduction h2{
+	font-size: 40px;
+	margin: 0 0 60px 665px;
+	text-align: right;
+}
+
+.introduction h3{
+	font-size: 30px;
+	margin: 0 0 60px 95px;
+}
+
+.i_p1,.i_p2{
+	width: 540px;
+	margin: 0 0 60px 225px;
+	margin-bottom: 80px;
+}
+
+
+.introduction p{
+	color: #000;
+	text-decoration: none;
+	font-family: noto sans tc;
+	font-weight: regular;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+/*portfolio*/
+
+.project{
+	width: 1110px;
+	padding-top: 120px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.project li a{
+	width: 350px;
+	height: 275px;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
