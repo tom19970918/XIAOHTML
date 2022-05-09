@@ -152,6 +152,7 @@ img {
 .wrap {
 	max-width: 100%;
 	margin: 0 auto;
+
 }
 
 .header {
@@ -163,7 +164,10 @@ img {
 	background: rgb(255, 255, 255);
 	border-bottom: 1px solid #999999;
 	padding: 0 2%;
-	/*margin-bottom: 40px;*/
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
 }
 
 .header ul {
@@ -190,13 +194,45 @@ img {
 	color: #304ffe;
 }
 
+.container {
+	width: 100%;
+	margin-top: 80px;
+}
+
+
 /*index*/
 
 .menu {
 	width: 100%;
-	/*padding-top: 120px;*/
 	display: flex;
 	justify-content: space-between;
+}
+
+.menu h3{
+	width: 100%;
+	color: #fff;
+	font-size: 28px;
+	font-family: Roboto;
+	letter-spacing: 1px;
+	font-weight: 500;
+	text-align: center;
+	text-transform:uppercase;
+	word-wrap: break-word;
+}
+
+.menu p{
+	width: 100%;
+	color: #fff;
+	font-size: 16px;
+	font-family: Roboto;
+	opacity: 0.8;
+	letter-spacing: 2px;
+	line-height: 1.5;
+	text-align: center;
+	text-transform:uppercase;
+	word-wrap: break-word;
+	margin-top: 8px;
+
 }
 
 .menu li,
@@ -212,36 +248,74 @@ img {
 }
 
 .menu .dope{
+	background-image: url(https://i.ibb.co/n82MPL0/dope.gif);
+	
+}
+
+.menu .dope:hover a{
+	bottom: 0;
+}
+
+.menu .dope a{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background: #e44ada;
+	position: absolute;
+	bottom: -100%;
+	text-decoration: none;
+	align-items: center;
+	padding: 20px;
+	
+}
+
+.menu .word{
+	width: 100%;
+	text-align: center;
+}
+
+/*index_左欄div_共通設計*/
+.menu .dope, .menu .pf,.menu .qs{
 	width: 100%;
 	height: 500px;
-	background-image: url(https://i.ibb.co/n82MPL0/dope.gif);
 	background-repeat: no-repeat;
 	background-position: center;
     background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+/*index_右欄div_共通設計*/
+.menu .dope, .menu .pf,.menu .qs{
+	width: 100%;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: cover;
+	position: relative;
+	overflow: hidden;
 }
 
 .menu .pf{
-	width: 100%;
-	height: 500px;
 	background-image: url(https://i.ibb.co/jWLtTww/paperfly.gif);
-	background-repeat: no-repeat;
-	background-position: center;
-    background-size: cover;
 }
 
 .menu .qs{
-	width: 100%;
-	height: 500px;
 	background-image: url(https://i.ibb.co/8XpvkDm/qsv.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-    background-size: cover;
 }
 
 .menu .kaka{
 	width: 100%;
 	height: 400px;
 	background-image: url(https://i.ibb.co/7NyyFYm/kaka.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: cover;
+}
+
+.menu .lq{
+	width: 100%;
+	height: 400px;
+	background-image: url(https://i.ibb.co/9r9cdNc/qhz3.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
     background-size: cover;
@@ -300,7 +374,7 @@ img {
 	background: #4f69fe;
 }
 
-.gotriwa a,
+/*.gotriwa a,
 .paperfly a,
 .kaka a,
 .dope a,
@@ -418,6 +492,7 @@ img {
 .oil a:hover {
 	background-image: url(https://i.ibb.co/V3jV8Lp/card.png);
 }
+*/
 
 
 
@@ -428,7 +503,6 @@ img {
 .introduction {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 120px;
 }
 
 .introduction h1,
@@ -476,13 +550,29 @@ h3 {
 	line-height: 1.5;
 }
 
+.ibg_1{
+	width: 100%;
+	height: 100vh;
+	background: #000;
+}
+.ibg_2{
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+}
+.ibg_3{
+	width: 100%;
+	height: 100vh;
+	background: gray;
+}
+
 /*portfolio*/
 
-.project {
+.project{
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .project li {
