@@ -170,9 +170,14 @@ img {
 	z-index: 100;
 }
 
-.header ul {
+.menu {
 	display: flex;
 	justify-content: space-between;
+}
+
+.show_menu{
+	display:none;
+
 }
 
 .header img {
@@ -202,13 +207,11 @@ img {
 
 /*index*/
 
-.menu {
+.content {
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
 }
 
-.menu h3{
+.content h3{
 	width: 100%;
 	color: #fff;
 	font-size: 28px;
@@ -220,7 +223,7 @@ img {
 	word-wrap: break-word;
 }
 
-.menu p{
+.content li p{
 	width: 100%;
 	color: #fff;
 	font-size: 16px;
@@ -235,28 +238,33 @@ img {
 
 }
 
-.menu li,
+.content li,
 img {
 	width: 100%;
 }
 
-.menu_left {
+.content_left {
 	width: 60%;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	float: left;
 }
 
-.menu .dope{
+.content_right {
+	width: 40%;
+	float: right;
+}
+
+.content .dope{
 	background-image: url(https://i.ibb.co/n82MPL0/dope.gif);
-	
 }
 
-.menu .dope:hover a{
+.content .dope:hover a{
 	bottom: 0;
 }
 
-.menu .dope a{
+.content .dope a{
 	display: flex;
 	width: 100%;
 	height: 100%;
@@ -269,13 +277,13 @@ img {
 	
 }
 
-.menu .word{
+.content .word{
 	width: 100%;
 	text-align: center;
 }
 
 /*index_左欄div_共通設計*/
-.menu .dope, .menu .pf,.menu .qs{
+.content_left li{
 	width: 100%;
 	height: 500px;
 	background-repeat: no-repeat;
@@ -285,9 +293,9 @@ img {
 	overflow: hidden;
 }
 /*index_右欄div_共通設計*/
-.menu .dope, .menu .pf,.menu .qs{
+.content_right li{
 	width: 100%;
-	height: 500px;
+	height: 400px;
 	background-repeat: no-repeat;
 	background-position: center;
     background-size: cover;
@@ -295,44 +303,29 @@ img {
 	overflow: hidden;
 }
 
-.menu .pf{
+.content .pf{
 	background-image: url(https://i.ibb.co/jWLtTww/paperfly.gif);
 }
 
-.menu .qs{
+.content .qs{
 	background-image: url(https://i.ibb.co/8XpvkDm/qsv.jpg);
 }
 
-.menu .kaka{
-	width: 100%;
-	height: 400px;
+.content .kaka{
 	background-image: url(https://i.ibb.co/7NyyFYm/kaka.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-    background-size: cover;
 }
 
-.menu .lq{
-	width: 100%;
-	height: 400px;
+.content .lq{
 	background-image: url(https://i.ibb.co/9r9cdNc/qhz3.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-    background-size: cover;
-}
-
-.menu_right {
-	width: 40%;
 }
 
 .name {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 730px;
-	height: 140px;
+	width: 100%;
 	background: #0026ca;
-	padding: 20px 40px;
+	padding: 26px 40px;
 }
 
 .name:hover {
@@ -342,7 +335,7 @@ img {
 .name h1 {
 	color: #fff;
 	font-family: noto sans tc;
-	font-weight: regular;
+	font-weight: normal;
 	font-size: 50px;
 	padding-bottom: 20px;
 }
@@ -374,125 +367,83 @@ img {
 	background: #4f69fe;
 }
 
-/*.gotriwa a,
-.paperfly a,
-.kaka a,
-.dope a,
-.lee a,
-.bird a,
-.xiao_book a,
-.bus a,
-.cocoa a,
-.oil a {
-	display: block;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-bottom: 30px;
-	background-position: 50%;
+@media(max-width:769px) {
+	.menu{
+		max-height: 0;
+		overflow: hidden;
+	}
+	.show_menu{
+		display: block;
+	}
+	.name{
+		display: block;
+	}
+	.name {
+		text-align: center;
+		order: 1;
+	}
+	.name a{
+		margin-top: 40px;
+		width: 100%;
+	}
+	.content{
+		
+	}
+	.content_left{
+		width: 100%;
+	}
+	.content_right{
+		display: block;
+		width: 100%;
+	}
+	.content_left li{
+		height: 430px;
+		order: 2;
+	}
+	.content_right li{
+		height: 430px;
+	}
+	
+	
 }
 
-.gotriwa a {
-	width: 350px;
-	height: 275px;
-	background-image: url(https://i.ibb.co/M7FV6L0/goTriwa.jpg);
+@media(max-width:376px) {
+	.menu{
+		max-height: 0;
+		overflow: hidden;
+	}
+	.show_menu{
+		display: block;
+	}
+	.name{
+		display: block;
+	}
+	.name {
+		text-align: center;
+		order: 1;
+	}
+	.name a{
+		margin-top: 40px;
+		width: 100%;
+	}
+	.content{
+		
+	}
+	.content_left{
+		width: 100%;
+	}
+	.content_right{
+		display: block;
+		width: 100%;
+	}
+	.content_left li{
+		height: 200px;
+		order: 2;
+	}
+	.content_right li{
+		height: 200px;
+	}
 }
-
-.gotriwa a:hover {
-	background-image: url(https://i.ibb.co/V3jV8Lp/card.png);
-}
-
-.paperfly a {
-	width: 100%;
-	height: auto;
-	background-image: url(https://i.ibb.co/TPvBjy4/paperfly.jpg);
-}
-
-.paperfly a:hover {
-	background-image: url(https://i.ibb.co/V3jV8Lp/card.png);
-}
-
-.kaka a {
-	width: 350px;
-	height: 197px;
-	background-image: url(https://i.ibb.co/jJ8kgyc/kaka.jpg);
-}
-
-.kaka a:hover {
-	background-image: url(https://i.ibb.co/V3jV8Lp/card.png);
-}
-
-.dope a {
-	width: 730px;
-	height: 411px;
-	background-image: url(../img/dope.gif);
-}
-
-.dope a:hover {
-	background-image: url(https://i.ibb.co/V3jV8Lp/card.png);
-}
-
-.lee a {
-	width: 350px;
-	height: 410px;
-	background-image: url(https://i.ibb.co/JsdKCGs/lee.jpg);
-}
-
-.lee a:hover {
-	background-image: url(https://i.ibb.co/V3jV8Lp/card.png);
-}
-
-.bird a {
-	width: 350px;
-	height: 270px;
-	background-image: url(https://i.ibb.co/JtBRskL/bird.jpg);
-}
-
-.bird a:hover {
-	background-image: url(https://i.ibb.co/V3jV8Lp/card.png);
-}
-
-.bus a {
-	width: 350px;
-	height: 250px;
-	background-image: url(https://i.ibb.co/Mk88Ybr/bus.jpg);
-}
-
-.bus a:hover {
-	background-image: url(https://i.ibb.co/V3jV8Lp/card.png);
-}
-
-.xiao_book a {
-	width: 350px;
-	height: 250px;
-	background-image: url(../img/xiao_book.jpg);
-}
-
-.xiao_book a:hover {
-	background-image: url(https://i.ibb.co/V3jV8Lp/card.png);
-}
-
-.cocoa a {
-	width: 350px;
-	height: 250px;
-	background-image: url(https://i.ibb.co/ngy8h2f/COCOA.gif);
-
-}
-
-.cocoa a:hover {
-	background-image: url(https://i.ibb.co/V3jV8Lp/card.png);
-}
-
-
-.oil a {
-	width: 730px;
-	height: 410px;
-	background-image: url(../img/oil.jpg);
-}
-
-.oil a:hover {
-	background-image: url(https://i.ibb.co/V3jV8Lp/card.png);
-}
-*/
 
 
 
