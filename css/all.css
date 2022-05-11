@@ -163,7 +163,7 @@ img {
 	align-items: center;
 	background: rgb(255, 255, 255);
 	border-bottom: 1px solid #999999;
-	padding: 0 2%;
+	padding: 0 28px;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -177,26 +177,45 @@ img {
 
 .show_menu{
 	display:none;
+	color: #000;
+	text-decoration: none;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 16px;
+	text-transform:uppercase;
+	border-radius: 0 0 10px 0;
+	transition: 0.2s;
+	border: 2px solid #fff;
 
 }
 
-.header img {
+.logo{
+	width: 130.33px;
+	height: 40px;
+}
+
+.show_logo{
 	width: 40px;
 	height: 40px;
+	display: none;
 }
 
 .header li a {
 	display: flex;
-	padding-left: 40px;
+	padding: 20px 20px;
 	color: #000;
 	text-decoration: none;
 	font-family: Roboto;
-	font-weight: regular;
+	font-weight: normal;
 	font-size: 16px;
+	text-transform:uppercase;
+	border-radius: 0 0 10px 0;
+	transition: 0.2s;
+	border: 2px solid #fff;
 }
 
 .header li a:hover {
-	color: #304ffe;
+	opacity: 0.5;
 }
 
 .container {
@@ -326,51 +345,56 @@ img {
 	width: 100%;
 	background: #0026ca;
 	padding: 26px 40px;
+	
 }
 
-.name:hover {
-	background: #304ffe;
-}
 
 .name h1 {
 	color: #fff;
 	font-family: noto sans tc;
-	font-weight: normal;
-	font-size: 50px;
+	font-weight: 100;
+	font-size: 46px;
 	padding-bottom: 20px;
+	transition: 1s;
+	letter-spacing: 2px;
 }
 
 .name p {
 	color: #fff;
 	font-family: noto sans tc;
-	font-weight: regular;
-	font-size: 20px;
+	font-weight: 100;
+	font-size: 24px;
+	transition: 1s;
+	letter-spacing: 2px;
 }
 
 .name a {
 	display: block;
 	width: 148px;
-	height: 48px;
 	padding: 16px 0;
 	text-align: center;
 	color: #0026ca;
 	background: #fff;
 	text-decoration: none;
 	font-family: noto sans tc;
-	font-weight: regular;
-	font-size: 16px;
+	font-weight: 500;
+	font-size: 18px;
 	border-radius: 0 0 10px 0;
+	transition: 0.2s;
+	border: 2px solid #fff;
+	letter-spacing: 2px;
 }
 
 .name a:hover {
 	color: #fff;
-	background: #4f69fe;
+	background: #0026ca;
+	border: 2px solid #fff;
 }
 
 @media(max-width:769px) {
+
 	.menu{
-		max-height: 0;
-		overflow: hidden;
+		display: none;
 	}
 	.show_menu{
 		display: block;
@@ -408,13 +432,7 @@ img {
 }
 
 @media(max-width:376px) {
-	.menu{
-		max-height: 0;
-		overflow: hidden;
-	}
-	.show_menu{
-		display: block;
-	}
+	
 	.name{
 		display: block;
 	}
