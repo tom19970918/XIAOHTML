@@ -391,7 +391,7 @@ img {
 	border: 2px solid #fff;
 }
 
-@media(max-width:769px) {
+@media(max-width:768px) {
 
 	.menu{
 		display: none;
@@ -431,7 +431,7 @@ img {
 	
 }
 
-@media(max-width:376px) {
+@media(max-width:576px) {
 	
 	.name{
 		display: block;
@@ -455,11 +455,11 @@ img {
 		width: 100%;
 	}
 	.content_left li{
-		height: 200px;
+		height: 280px;
 		order: 2;
 	}
 	.content_right li{
-		height: 200px;
+		height: 280px;
 	}
 }
 
@@ -557,7 +557,7 @@ h3 {
 	}
 }
 
-@media(max-width:769px) {
+@media(max-width:768px) {
 	.project {
 		justify-content: center;
 	}
@@ -567,7 +567,7 @@ h3 {
 	}
 }
 
-@media(max-width:376px) {
+@media(max-width:576px) {
 	.project {
 		justify-content: center;
 	}
