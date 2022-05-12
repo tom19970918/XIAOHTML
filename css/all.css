@@ -304,26 +304,6 @@ img {
 	float: right;
 }
 
-.content .dope{
-	background-image: url(https://i.ibb.co/n82MPL0/dope.gif);
-}
-
-.content .dope:hover a{
-	bottom: 0;
-}
-
-.content .dope a{
-	display: flex;
-	width: 100%;
-	height: 100%;
-	background: #e44ada;
-	position: absolute;
-	bottom: -100%;
-	text-decoration: none;
-	align-items: center;
-	padding: 20px;
-	
-}
 
 .content .word{
 	width: 100%;
@@ -351,8 +331,34 @@ img {
 	overflow: hidden;
 }
 
+.content li:hover a{
+	bottom: 0;
+}
+
+.content li a{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: -100%;
+	text-decoration: none;
+	align-items: center;
+	padding: 20px;
+}
+
+.content .dope{
+	background-image: url(https://i.ibb.co/n82MPL0/dope.gif);
+}
+.content .dope a{	
+	background: #e44ada;
+}
+
 .content .pf{
 	background-image: url(https://i.ibb.co/jWLtTww/paperfly.gif);
+}
+
+.content .pf a{	
+	background: #51a7d8;
 }
 
 .content .qs{
@@ -361,6 +367,10 @@ img {
 
 .content .kaka{
 	background-image: url(https://i.ibb.co/7NyyFYm/kaka.jpg);
+}
+
+.content .kaka a{	
+	background: #ff5722;
 }
 
 .content .lq{
@@ -397,7 +407,7 @@ img {
 	letter-spacing: 2px;
 }
 
-.name a {
+.content .name a {
 	display: block;
 	width: 148px;
 	padding: 16px 0;
